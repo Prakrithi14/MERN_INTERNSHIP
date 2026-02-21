@@ -15,6 +15,7 @@ import TernaryOperator from "./Components/ES7/TernaryOperator";
 import Props from "./Components/ES7/Props";
 import Hookusestate from "./Components/Hook/Hookusestate";
 import Task1 from "./Components/MUI/Task1";
+import Task2 from "./Components/MUI/Task2";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/TernaryOperator" element={<TernaryOperator/>}/>
           <Route path="/Hookusestate" element={<Hookusestate/>}/>
           <Route path="/Task1" element={<Task1/>}/>
+          <Route path="/Task2" element={<Task2/>}/>
           <Route path="/Props" element={<Props name="Prakrithi"/>}/>
         </Routes>
      </BrowserRouter>

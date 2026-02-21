@@ -44,6 +44,10 @@ export default function Newcard() {
       description:'This is flower.It is a beautiful flower.It is yellow in color with brown center.It is a sunflower.'
     }
   ]
+  const Handlemore=()=>{
+    window.open("https://en.wikipedia.org/wiki/Dahlia")
+
+  }
 return (
     <div style={{display:'flex', flexWrap:'wrap',margin:'30px',gap:'40px'}}>
       {flowers.map((info)=>(
@@ -59,7 +63,7 @@ return (
         </CardContent>
         <CardActions>
             <Button  variant='contained' size='small'>Share</Button>
-            <Button  variant='contained' size='small'>Know more</Button>
+            <Button  variant='contained' size='small' onClick={Handlemore}>Know more</Button>
         </CardActions>
     </Card>
     ))}
