@@ -16,36 +16,42 @@ export default function Newcard() {
     const flowers=[{
         name:'Dahlia',
         profileimage:image1,
-        description:'This is a  is a flower. It is a beautiful flower. It is a red flower. It is a dahlia.The Dahlia is a popular, bushy perennial plant belonging to the Asteraceae (daisy) family, originally native to Mexico and Central America.'
+        description:'This is a  is a flower. It is a beautiful flower. It is a red flower. It is a dahlia.The Dahlia is a popular, bushy perennial plant belonging to the Asteraceae (daisy) family, originally native to Mexico and Central America.',
+        share:"https://en.wikipedia.org/wiki/Dahlia"
     } ,
     {
         name:'Rose',
         profileimage:image2,
-        description:'This is a  is a flower. It is a beautiful flower. It is a red flower. It is a rose.The rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.'
+        description:'This is a  is a flower. It is a beautiful flower. It is a red flower. It is a rose.The rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears.',
+        share:"https://en.wikipedia.org/wiki/Rose"
     },
     {
       name:'Lavender',
       profileimage:image3,
-      description:'This is a  is a flower. It is a beautiful flower. It is a purple flower. It is a lavender.Lavender, (genus Lavandula), genus of about 30 species of aromatic shrubs in the mint family (Lamiaceae), native to the Old World.'
+      description:'This is a  is a flower. It is a beautiful flower. It is a purple flower. It is a lavender.Lavender, (genus Lavandula), genus of about 30 species of aromatic shrubs in the mint family (Lamiaceae), native to the Old World.',
+      share:"https://en.wikipedia.org/wiki/Lavender"
     },
     {
       name:'Lily',
       profileimage:image4,
-      description:'This is a  is a flower. It is a beautiful flower. It is a white flower. It is a lily.Lily, (genus Lilium), genus of about 100 species of flowering plants in the family Liliaceae, native to the temperate regions of the Northern Hemisphere.'
+      description:'This is a  is a flower. It is a beautiful flower. It is a white flower. It is a lily.Lily, (genus Lilium), genus of about 100 species of flowering plants in the family Liliaceae, native to the temperate regions of the Northern Hemisphere.',
+      share:"https://en.wikipedia.org/wiki/Lily"
     },
     {
       name:'marigold',
       profileimage:image5,
-      description:'This is a  is a flower. It is a beautiful flower. It is a orange flower. It is a marigold.Marigold, (genus Tagetes), genus of about 50 species of annual and perennial herbs in the sunflower family (Asteraceae), native to the Americas.'
+      description:'This is a  is a flower. It is a beautiful flower. It is a orange flower. It is a marigold.Marigold, (genus Tagetes), genus of about 50 species of annual and perennial herbs in the sunflower family (Asteraceae), native to the Americas.',
+      share:"https://en.wikipedia.org/wiki/Marigold"
     },
     {
       name:'Sunflower',
       profileimage:image6,
-      description:'This is flower.It is a beautiful flower.It is yellow in color with brown center.It is a sunflower.'
+      description:'This is flower.It is a beautiful flower.It is yellow in color with brown center.It is a sunflower.',
+      share:"https://en.wikipedia.org/wiki/sunflower"
     }
   ]
-  const Handlemore=()=>{
-    window.open("https://en.wikipedia.org/wiki/Dahlia")
+  const Handlemore=(link)=>{
+      window.open(link)
 
   }
 return (
@@ -63,7 +69,7 @@ return (
         </CardContent>
         <CardActions>
             <Button  variant='contained' size='small'>Share</Button>
-            <Button  variant='contained' size='small' onClick={Handlemore}>Know more</Button>
+            <Button  variant='contained' size='small' onClick={()=>Handlemore(info.share)}>Know more</Button>
         </CardActions>
     </Card>
     ))}

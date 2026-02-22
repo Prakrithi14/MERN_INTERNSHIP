@@ -22,7 +22,8 @@ const pages = [
     {name:"Destructuring",path:'/Destructuring'},
     {name:"ImportModule",path:'/ImportModule'},
     {name:"TernaryOperator",path:'/TernaryOperator'},
-    {name:'Hooks',path:'/Hookusestate'}
+    {name:'Hooks',path:'/Hookusestate'},
+    {name:"Counter",path:'/Task1'}
     
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
