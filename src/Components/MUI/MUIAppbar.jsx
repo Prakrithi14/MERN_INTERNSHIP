@@ -19,11 +19,14 @@ const pages = [
     {name:"Arrow",path:'/Arrowfunction'},
     {name:"Table",path:'/BasicTable'},
     {name:"Card",path:'/Newcard'},
-    {name:"Destructuring",path:'/Destructuring'},
-    {name:"ImportModule",path:'/ImportModule'},
-    {name:"TernaryOperator",path:'/TernaryOperator'},
+   // {name:"Destructuring",path:'/Destructuring'},
+    //{name:"ImportModule",path:'/ImportModule'},
+    //{name:"TernaryOperator",path:'/TernaryOperator'},
     {name:'Hooks',path:'/Hookusestate'},
-    {name:"Counter",path:'/Task1'}
+    {name:"Counter",path:'/Task1'},
+    {name:"UseEffect",path:'/HookuseEffect'},
+    {name:"APIaxios",path:'/ApiAxios'},
+    {name:"APIaxiosProducts",path:'/Task3'},
     
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

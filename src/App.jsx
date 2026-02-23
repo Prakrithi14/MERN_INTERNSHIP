@@ -16,6 +16,9 @@ import Props from "./Components/ES7/Props";
 import Hookusestate from "./Components/Hook/Hookusestate";
 import Task1 from "./Components/MUI/Task1";
 import Task2 from "./Components/MUI/Task2";
+import Task3 from "./Components/MUI/Task3";
+import HookuseEffect from "./Components/Hook/HookuseEffect";
+import ApiAxios from "./Components/Hook/ApiAxios";
 
 
 function App() {
@@ -39,6 +42,9 @@ function App() {
           <Route path="/Hookusestate" element={<Hookusestate/>}/>
           <Route path="/Task1" element={<Task1/>}/>
           <Route path="/Task2" element={<Task2/>}/>
+          <Route path="/Task3" element={<Task3/>}/>
+          <Route path="/ApiAxios" element={<ApiAxios/>}/>
+          <Route path="/HookuseEffect" element={<HookuseEffect/>}/>
           <Route path="/Props" element={<Props name="Prakrithi"/>}/>
         </Routes>
      </BrowserRouter>
