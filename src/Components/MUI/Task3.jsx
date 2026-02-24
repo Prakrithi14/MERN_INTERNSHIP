@@ -46,6 +46,7 @@ import ShareIcon from '@mui/icons-material/Share';
 
 import axios from 'axios'
 import React, { useEffect,useState } from 'react'
+import CardActionArea from '@mui/material/CardActionArea'
 
 export default function Task3() {
     const [data,setData]=useState([])
@@ -53,6 +54,7 @@ export default function Task3() {
         axios.get("https://dummyjson.com/products")
         
         .then ((response)=>{
+            console.log(response)
             setData(response.data.products)
         })
         .catch((error)=>{
@@ -64,29 +66,31 @@ export default function Task3() {
     
     },[])
   return (
-    <div style={{display:'flex', flexWrap:'wrap',margin:'30px',gap:'40px'}}>
+    <div style={{display:'flex', flexWrap:'wrap',margin:'0px',gap:'40px'}}>
         {data.map((item)=>(
-            <Card style={{ width:345,fontFamily:'cursive' }}>
-                <CardHeader
-                title={item.title}
-                subheader={item.category}
-                />
-            <CardMedia
-            component="img"
-           
-            image={item.images}
-            />
-            <CardContent>
-                <Typography variant='body'>{item.description}</Typography>
-            </CardContent>
-            <CardActions>
-             <IconButton>
-                <FavoriteIcon/>
-             </IconButton>
-             <IconButton>
-                <ShareIcon/>
-             </IconButton>
-            </CardActions>
+            <Card style={{ width:345,fontFamily:'cursive',backgroundColor:"aliceblue" }}>
+                {/* <CardActionArea> */}
+                    <CardHeader
+                        title={item.title}
+                        subheader={item.category}
+                     />
+                    <CardMedia
+                        component="img"
+                        image={item.thumbnail}
+                    />
+                     <CardContent>
+                            <Typography variant='body'>{item.description}</Typography>
+                            {/* <Typography variant='body'>{item.price}</Typography> */}
+                     </CardContent>
+                     <CardActions>
+                             <IconButton>
+                                    <FavoriteIcon/>
+                             </IconButton>
+                             <IconButton>
+                                    <ShareIcon/>
+                            </IconButton>
+                         </CardActions>
+                 {/* </CardActionArea> */}
             </Card>
         ))}
       
